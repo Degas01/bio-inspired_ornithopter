@@ -1,16 +1,8 @@
-# R.O.B.I.N.: Robot Ornithopter Bio-Inspired by Nature
+# R.O.B.I.N. - Robot Ornithopter Bio-Inspired by Nature
 
 <p align="center">
-  <img width="1618" height="764" alt="IMG_5426" src="https://github.com/user-attachments/assets/57f13fcb-ea8a-4881-8edf-b7403eebe0bb" />
+  <img width="2048" height="758" alt="IMG-20250319-WA0011" src="https://github.com/user-attachments/assets/657438b4-bb4d-4284-b9f2-4693eaa32f16" />
 </p>
-
-
-
-
-
-
-
-
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
@@ -23,15 +15,33 @@
 
 *A bio-inspired flying robot designed for seamless wildlife monitoring and conservation*
 
-[Features](#features) • [Demo](#demo) • [Installation](#installation) • [Documentation](#documentation) • [Results](#results) • [Team](#team)
+---
 
-<img src="assets/hero-image.jpg" alt="R.O.B.I.N. Prototype" width="800"/>
+## Project Overview
 
-</div>
+This repository contains the full implementation of my MSc Robotics Engineering Group Project at King’s College London:
+
+> **R.O.B.I.N. - Robot Ornithopter Bio-Inspired by Nature**
+
+*MSc Robotics Engineering Group Project | King’s College London | 2025*
+
+This project develops a bio-inspired flapping-wing aerial robot combining:
+
+- **Lightweight mechanical design and CAD-based prototyping**
+- **Transverse crank-driven flapping-wing actuation**
+- **Aerodynamic analysis via transient CFD simulations**
+- **Embedded control using Arduino-based electronics**
+- **Experimental lift, glide and propulsion testing**
+
+The system was designed, simulated, prototyped and experimentally validated as a low-disturbance aerial platform for environmental monitoring and conservation applications.
 
 ---
 
-## 📋 Table of Contents
+## Project Description
+
+R.O.B.I.N. is a bio-inspired flapping-wing aerial robot developed to investigate low-disturbance flight for environmental monitoring applications. The system integrates lightweight mechanical design with a transverse crank-based flapping mechanism to generate symmetric wing motion, enabling lift and forward propulsion without conventional rotors. Aerodynamic behaviour is analysed through transient CFD simulations to characterise lift generation, flow separation and wake dynamics. It is validated via physical prototyping and experimental testing. The platform incorporates embedded control using Arduino-based electronics, RF communication and inertial sensing to support controlled flight experiments and performance evaluation. R.O.B.I.N. serves as an experimental testbed for studying bio-inspired aerial locomotion, aerodynamics and system-level design trade-offs in flapping-wing robotics.
+
+## Table of Contents
 - [Overview](#overview)
 - [Motivation](#motivation)
 - [Key Features](#features)
