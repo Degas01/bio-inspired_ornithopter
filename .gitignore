@@ -1,1 +1,310 @@
+# Arduino & Embedded
+# Arduino build output
 
+*.elf
+*.hex
+*.eep
+*.lss
+*.map
+*.sym
+*.lst
+*.bin
+
+# Arduino IDE files
+
+.build/
+build/
+*.ino.cpp
+*.ino.hex
+*.ino.eep
+*.ino.with_bootloader.bin
+*.ino.with_bootloader.hex
+
+# PlatformIO
+
+.pio/
+.pioenvs/
+.piolibdeps/
+lib/readme.txt
+platformio.ini.bak
+
+# CAD Files (Fusion 360)
+
+# Fusion 360 backup and temporary files
+
+*.f3d.lock
+*.f3d.bak
+*.bak
+*.old
+*_backup/
+*.autosave
+~$*.f3d
+
+# STL mesh cache
+
+*.stl.cache
+
+# STEP/IGES temporary files
+
+*.stp.tmp
+*.step.tmp
+*.igs.tmp
+
+# Manufacturing files (keep originals, ignore exports)
+
+*.gcode.bak
+
+# ANSYS CFD
+
+# ANSYS temporary and result files
+
+*.rst
+*.rth
+*.rmg
+*.full
+*.esav
+*.osav
+*.lock
+*.page
+*.log
+*.err
+*.out
+*.stat
+*.mntr
+*.DSP
+*.esav.*
+*.db
+*.CDB
+*.rdb
+*.RDB
+
+# ANSYS workbench files
+
+*_files/
+*.mechdat
+*.mechdb
+*.wbpj.lock
+*.bak.*
+
+# Fluent files
+
+*.cas.h5
+*.dat.h5
+*.trn
+*.ip
+
+# CFX files
+
+*.cfx
+*.res
+*.mres
+*.bak
+
+# Mesh files 
+
+*.msh.bak
+*.msh~
+
+# Python (Data Analysis)
+
+# Byte-compiled / optimized / DLL files
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+
+venv/
+ENV/
+env/
+.venv/
+pipenv/
+poetry.lock
+
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data processing outputs
+
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# Plots and figures 
+
+*_draft.png
+*_test.png
+*_temp.*
+
+# Documentation
+
+# LaTeX build files
+
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Microsoft Office temporary files
+
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+*.tmp
+
+# LibreOffice locks
+
+.~lock.*
+
+# IDEs & Editors
+
+# Visual Studio Code
+
+.vscode/
+*.code-workspace
+.history/
+
+# IntelliJ IDEA / CLion
+
+.idea/
+*.iml
+*.iws
+cmake-build-*/
+
+# Eclipse
+
+.project
+.cproject
+.settings/
+
+# Sublime Text
+
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+
+*~
+\#*\#
+.\#*
+
+# Operating Systems
+
+# macOS
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+
+.directory
+.Trash-*
+
+# 3D Printing
+
+# Slicer temporary files
+
+*.3mf.bak
+*.gcode.bak
+*.gx
+
+# Cura
+
+*.curaprofile.bak
+
+# PrusaSlicer
+
+*.sl1.bak
+
+# Testing & Measurements
+
+# Test data (raw)
+
+test_data/raw/*
+!test_data/raw/.gitkeep
+
+# Calibration files 
+
+calibration_*.dat
+!calibration_template.dat
+
+# Video recordings (too large)
+
+*.mov
+*.mp4
+*.avi
+*.mkv
+!demo_videos/*.mp4
+
+# High-resolution images (keep compressed)
+
+*_raw.jpg
+*_raw.png
+*_highres.tif
+
+# Build & Deployment
+
+# Compiled libraries
+
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Executables
+
+*.exe
+*.out
+*.app
+
+# Package files
+
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+!releases/*.zip
+
+# Project Specific
+
+# Sensitive data
+
+secrets/
+credentials/
+*.key
+*.pem
+*.cert
