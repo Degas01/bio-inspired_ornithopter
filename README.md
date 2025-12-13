@@ -6,12 +6,14 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)]()
 [![CAD](https://img.shields.io/badge/Fusion_360-0696D7?logo=autodesk&logoColor=white)](https://www.autodesk.com/products/fusion-360)
 [![CFD](https://img.shields.io/badge/ANSYS-FFB71B?logo=ansys&logoColor=black)](https://www.ansys.com/)
 [![Build Status](https://img.shields.io/badge/build-prototype-yellow)](.)
+[![Hardware](https://img.shields.io/badge/Hardware-Arduino%20%7C%20BLDC-orange)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![King's College London](https://img.shields.io/badge/Institution-King's_College_London-blue.svg)](https://www.kcl.ac.uk/)
-
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 *A bio-inspired flying robot designed for seamless wildlife monitoring and conservation*
 
@@ -42,74 +44,43 @@ The system was designed, simulated, prototyped and experimentally validated as a
 R.O.B.I.N. is a bio-inspired flapping-wing aerial robot developed to investigate low-disturbance flight for environmental monitoring applications. The system integrates lightweight mechanical design with a transverse crank-based flapping mechanism to generate symmetric wing motion, enabling lift and forward propulsion without conventional rotors. Aerodynamic behaviour is analysed through transient CFD simulations to characterise lift generation, flow separation and wake dynamics. It is validated via physical prototyping and experimental testing. The platform incorporates embedded control using Arduino-based electronics, RF communication and inertial sensing to support controlled flight experiments and performance evaluation. R.O.B.I.N. serves as an experimental testbed for studying bio-inspired aerial locomotion, aerodynamics and system-level design trade-offs in flapping-wing robotics.
 
 ## Table of Contents
-- [Overview](#overview)
-- [Motivation](#motivation)
-- [Key Features](#features)
-- [System Architecture](#system-architecture)
-- [Mechanical Design](#mechanical-design)
-  - [Flapping Mechanism](#flapping-mechanism)
-  - [Wing Design](#wing-design)
-  - [Body Structure](#body-structure)
-- [Electronics & Control](#electronics--control)
-  - [Hardware Components](#hardware-components)
-  - [Control System](#control-system)
-  - [Circuit Diagrams](#circuit-diagrams)
-- [Software](#software)
-  - [Control Code](#control-code)
-  - [Feedback System](#feedback-system)
-- [CFD Analysis](#cfd-analysis)
-- [Testing & Results](#testing--results)
-  - [Lift Generation Tests](#lift-generation-tests)
-  - [Gliding Tests](#gliding-tests)
-  - [Performance Metrics](#performance-metrics)
-- [Demo Videos](#demo-videos)
-- [Installation & Setup](#installation--setup)
-- [Future Work](#future-work)
-- [Project Timeline](#project-timeline)
-- [Bill of Materials](#bill-of-materials)
-- [Team](#team)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
-- [References](#references)
+
+- [1. Project Motivation] (#project-motivation)
+- [2. Key Features](#features)
+- [3. System Architecture](#system-architecture)
+- [4. Mechanical Design](#mechanical-design)
+- [5. Electronics & Control](#electronics--control)
+- [6. Software](#software)
+- [7. CFD Analysis](#cfd-analysis)
+- [8. Testing & Results](#testing--results)
+- [9. Installation & Setup](#installation--setup)
+- [10. Future Work](#future-work)
+- [11. Bill of Materials](#bill-of-materials)
+- [12. Sustainability & Impact](#sustainability-&-impact)
+- [13. Team](#team)
+- [14. Acknowledgments](#acknowledgments)
+- [15. License](#license)
+- [16. References](#references)
 
 ---
 
-## 🎯 Overview
-
-R.O.B.I.N. is a bio-inspired ornithopter designed to monitor wildlife and ecosystems for conservation efforts. By mimicking the flapping dynamics of birds like rock doves and kestrels, this robot achieves efficient flight while minimizing disturbance to natural habitats.
-
-**Project Highlights:**
-- ✅ Biomimetic flapping mechanism with 50:1 gear reduction
-- ✅ 1020mm wingspan with flexible nylon membrane
-- ✅ Peak lift generation: 0.7N at 204 RPM
-- ✅ Stable gliding: 3-4 meters horizontal distance
-- ✅ MPU6050-based feedback stabilization
-- ✅ RF wireless control system
-- ✅ Comprehensive CFD validation (ANSYS)
-
-### 🎥 **[INSERT: Hero video/GIF showing robot in flight]**
-
----
-
-## 🌍 Motivation
+## 1. Project Motivation
 
 Traditional UAVs used in wildlife monitoring suffer from critical issues:
-- 🔊 **Noise pollution**: Causes anti-predatory responses in animals
-- ⚠️ **Stress induction**: Increases mortality rates in wildlife
-- 📉 **Data quality**: Animals flee before adequate observation
-- ♻️ **Environmental disruption**: High-frequency motor sounds
+- **Noise pollution**: Causes anti-predatory responses in animals
+- **Stress induction**: Increases mortality rates in wildlife
+- **Data quality**: Animals flee before adequate observation
+- **Environmental disruption**: High-frequency motor sounds
 
-**Our Solution:** A bio-inspired approach that:
+**Solution:** A bio-inspired approach that:
 - Mimics natural bird flight for seamless habitat integration
 - Reduces acoustic signature by 70% compared to traditional drones
 - Enables closer wildlife observation without behavioral disruption
 - Supports **UN SDG 15: Life on Land**
 
-### 📊 **[INSERT: Infographic comparing traditional drones vs R.O.B.I.N.]**
-
 ---
 
-## ✨ Features
+## 2. Key Features
 
 ### Mechanical Innovation
 - **Dual Transverse Shaft Mechanism**: Converts rotary to flapping motion
@@ -131,7 +102,7 @@ Traditional UAVs used in wildlife monitoring suffer from critical issues:
 
 ---
 
-## 🏗️ System Architecture
+## 3. System Architecture
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                     R.O.B.I.N. System                    │
@@ -160,11 +131,9 @@ Traditional UAVs used in wildlife monitoring suffer from critical issues:
 └─────────────────────────────────────────────────────────┘
 ```
 
-### 📐 **[INSERT: System block diagram with component photos]**
-
 ---
 
-## ⚙️ Mechanical Design
+## 4. Mechanical Design
 
 ### Flapping Mechanism
 
@@ -181,18 +150,30 @@ Amplitude = 2 × Wing Span × sin(φ)
 ```
 
 **Key Components:**
-- 🔧 50:1 gear train (PLA gears + steel shafts)
-- 🔩 6× precision bearings (heat stress mitigation)
-- ⚡ 2300KV BLDC motor
-- 🔋 2S LiPo battery (7.4V)
+- 50:1 gear train (PLA gears + steel shafts)
+- 6× precision bearings (heat stress mitigation)
+- 2300KV BLDC motor
+- 2S LiPo battery (7.4V)
 
-#### 🖼️ **[INSERT IMAGES:]**
-1. CAD model of flapping mechanism (Figure 8)
-2. Assembled mechanism on prototype (Figure 11)
-3. Gear train close-up
-4. Mechanism in motion (GIF/video)
+<p align="center"> 
+  <img width="1299" height="390" alt="Front View of Flapping Mechanism in Fusion Model" src="https://github.com/user-attachments/assets/6423d892-c1e5-4924-b0e5-9fa7ea47bd0a" />
+  <br>
+  <em> Front View of Flapping Mechanism in Fusion Model </em
 
----
+<p align="center"> 
+  <img width="567" height="143" alt="Side View of Flapping Mechanism in Fusion Model" src="https://github.com/user-attachments/assets/5020e6da-8483-4296-bdb0-393b5a0ad988" />
+  <br>
+  <em> Side View of Flapping Mechanism in Fusion Model </em
+
+<p align="center">
+  <img width="2048" height="758" alt="IMG-20250319-WA0011" src="https://github.com/user-attachments/assets/7ab812d9-0fe6-4694-9234-c8e4b08a3551" />
+  <br>
+  <em> CAD model of flapping mechanism </em>
+
+<div align="center">
+  <h3>Mechanism in motion</h3>
+  <video src="https://github.com/user-attachments/assets/8695b5c1-417e-4c3c-990f-2ece7f1de090" width="400" controls></video>
+</div>
 
 ### Wing Design
 
@@ -208,11 +189,20 @@ Amplitude = 2 × Wing Span × sin(φ)
 - Single support batten (mimics bird wing bone structure)
 - Cambered profile potential for lift optimization
 
-#### 🖼️ **[INSERT IMAGES:]**
-1. Wing schematic (Figure 12)
-2. Fully assembled wings (Figure 2, 13)
-3. Wing frame construction process
-4. Material comparison table (Table 5)
+<p align="center">
+  <img width="797" height="364" alt="Schematic of intended wing design" src="https://github.com/user-attachments/assets/e6237917-c4bd-4384-9f37-893f42f72111" />
+  <br>
+  <em> Wing schematic </em>
+
+<p align="center">
+  <img width="173" height="130" alt="Fully assembled wings" src="https://github.com/user-attachments/assets/764cd4c6-9663-49bf-9a39-94cf113974e5" />
+  <br>
+  <em> Fully assembled wings </em>
+
+<p align="center">
+  <img width="667" height="177" alt="Mechanical properties of wing membrane and frame materials" src="https://github.com/user-attachments/assets/96584f28-e8a6-408b-90d8-65fb5cd79b45" />
+  <br>
+  <em> Material comparison table </em>
 
 **Material Selection Analysis:**
 
@@ -222,8 +212,6 @@ Amplitude = 2 × Wing Span × sin(φ)
 | Nylon | - | - | - | ✓ (used) |
 | Carbon Fiber | 200-500 GPa | 3-7 GPa | 1600-2000 kg/m³ | Future work |
 
----
-
 ### Body Structure
 
 **Center of Gravity Optimization:**
@@ -231,14 +219,29 @@ Amplitude = 2 × Wing Span × sin(φ)
 - Balanced for pitch stability during flight
 - Total mass: 248g (97g body + 151g electronics/wings)
 
-#### 🖼️ **[INSERT IMAGES:]**
-1. CAD body design (Figure 6, 7)
-2. CoG visualization
-3. Final assembled robot (Figures 29-31)
+<p align="center">
+  <img width="743" height="207" alt="CAD location of the Centre of Gravity of the Prototype, computed through Fusion 360" src="https://github.com/user-attachments/assets/3e955248-b013-4668-a8c9-271d97fb3b96" />
+  <br>
+  <em> CAD location of the Centre of Gravity of the Prototype, computed through Fusion 360 </em>
+
+<p align="center">
+  <img width="1360" height="1020" alt="Fully assembled robot" src="https://github.com/user-attachments/assets/c97cf330-4a4b-4643-ba8c-cf2d684f8967" />
+  <br>
+  <em> Fully assembled prototype </em>
+
+<p align="center">
+  <img width="1360" height="1020" alt="Full assembled robot (top view)" src="https://github.com/user-attachments/assets/fea09813-e538-47bc-9bfb-91b7a05e8661" />
+  <br>
+  <em> Full assembled prototype (top view) </em>
+
+<p align="center">
+  <img width="1360" height="1020" alt="Close-up of gearbox and electronics" src="https://github.com/user-attachments/assets/78fe04db-24a3-4239-8907-3e8d7037a7f5" />
+  <br>
+  <em> Close-up of gearbox and electronics </em>
 
 ---
 
-## 🔌 Electronics & Control
+## 5. Electronics & Control
 
 ### Hardware Components
 
@@ -253,8 +256,6 @@ Amplitude = 2 × Wing Span × sin(φ)
 | Battery | 2S LiPo (7.4V) | 1 | Power supply |
 | Joystick | Analog 2-axis | 1 | Manual control |
 | Potentiometer | 10kΩ | 1 | Speed adjustment |
-
-### 📦 **[INSERT: Component photos with labels]**
 
 ---
 
@@ -273,14 +274,29 @@ Amplitude = 2 × Wing Span × sin(φ)
 #### Circuit Diagrams
 
 ##### Transmitter Circuit
-**[INSERT: Figure 3 - Joystick controller circuit diagram]**
+
+<p align="center">
+  <img width="567" height="284" alt="Circuit Diagram of Joystick Controller" src="https://github.com/user-attachments/assets/7c228ba1-b534-427a-8ec9-77dcebd14a7b" />
+  <br>
+  <em> Circuit Diagram of Joystick Controller </em>
 
 ##### Receiver Circuit
-**[INSERT: Figures 4, 5 - Motor integration and MPU feedback system]**
+
+<p align="center">
+  <img width="557" height="374" alt="Circuit Diagram of BLCD Motor integration on Arduino" src="https://github.com/user-attachments/assets/c18c936a-3683-4933-8008-7dfd48e22d60" />
+  <br>
+  <em> Circuit Diagram of BLCD Motor integration on Arduino </em>
+
+Adapted from A. Raj (2018)
+
+<p align="center">
+  <img width="198" height="111" alt="Circuit Diagram of MPU, tail Feedback system" src="https://github.com/user-attachments/assets/6584123d-b3ef-4e1e-8b5f-943d729ecdf1" />
+  <br>
+  <em> Circuit Diagram of MPU, tail Feedback system </em>
 
 ---
 
-## 💻 Software
+## 6. Software
 
 ### Control Code
 
@@ -290,28 +306,129 @@ Amplitude = 2 × Wing Span × sin(φ)
 // - Reads potentiometer (motor speed) and joystick (tail control)
 // - Maps analog values to PWM ranges
 // - Transmits via RF module at 2000bps
-
-// See: src/transmitter/rf_controller.ino
 ```
 
-**[INSERT: Code snippet with syntax highlighting]**
-
-#### Receiver (Onboard System)
 ```cpp
-// Key Features:
-// - Receives RF signals
-// - Controls BLDC motor via ESC
-// - Implements complementary filter for pitch stabilization
-// - Mixes manual and autonomous control (70/30 split)
+// --- Program for the Wireless Transmitter / Controller ---
 
-// See: src/receiver/bird_controller.ino
+#include <RH_ASK.h>  // RadioHead ASK library for RF communication
+#include <SPI.h>     // Required even if not directly used
+
+// --- RF Module Setup ---
+// RH_ASK(bitrate, rxPin, txPin, pttPin)
+RH_ASK rf_driver(2000, 11, 12, 0);
+
+// --- Input Pins ---
+const int PotPin = A1;       // Potentiometer connected to analog pin A1
+const int JoystickPin = A0;  // Joystick axis (e.g., horizontal) connected to A0
+
+// --- Data Structure for Transmission ---
+// Groups potentiometer and joystick values into a single packet
+struct ControlData {
+  uint16_t potValue;  // Motor PWM value (mapped 1000–2000 for ESC)
+  uint8_t joyValue;   // Servo angle (mapped 30–150 for tail control)
+};
+
+void setup() {
+  Serial.begin(9600);  // Start Serial for debugging output
+
+  // Initialize RF transmitter
+  if (!rf_driver.init()) {
+    Serial.println("Transmitter initialization failed!");
+  } else {
+    Serial.println("Transmitter ready");
+  }
+}
+
+void loop() {
+  // --- Read Raw Analog Inputs ---
+  int raw_JoystickValue = analogRead(JoystickPin);  // 0–1023
+  int raw_PotValue = analogRead(PotPin);            // 0–1023
+
+  // --- Map Inputs to Application Ranges ---
+  // Convert joystick input to an angle between 30° and 150°
+  uint8_t JoystickValue = map(raw_JoystickValue, 0, 1023, 30, 150);
+
+  // Convert potentiometer input to PWM pulse width between 1000–2000μs
+  uint16_t PotValue = map(raw_PotValue, 0, 1023, 1000, 2000);
+
+  // --- Create a Control Packet ---
+  ControlData data = { PotValue, JoystickValue };
+
+  // --- Transmit the Data Packet via RF ---
+  rf_driver.send((uint8_t *)&data, sizeof(data));  // Send binary data
+  rf_driver.waitPacketSent();                      // Ensure data is fully sent
+
+  // --- Debug Output to Serial Monitor ---
+  Serial.print("Sent -> Motor PWM: ");
+  Serial.print(PotValue);
+  Serial.print(" | Tail Servo: ");
+  Serial.println(JoystickValue);
+
+  delay(50);  // Optional small delay to control transmission rate
+}
 ```
 
-**[INSERT: Code flowchart diagram]**
+**Control Flow Diagram:**
+```
+┌─────────────────────────────────────────────┐
+│          RF Transmitter Loop                │
+├─────────────────────────────────────────────┤
+│                                             │
+│  ┌──────────────┐      ┌──────────────┐   │
+│  │ Read         │      │ Read         │   │
+│  │ Potentiometer│      │ Joystick     │   │
+│  │ (A1)         │      │ (A0)         │   │
+│  │ 0-1023       │      │ 0-1023       │   │
+│  └──────┬───────┘      └──────┬───────┘   │
+│         │                     │            │
+│         ▼                     ▼            │
+│  ┌──────────────┐      ┌──────────────┐   │
+│  │ Map to       │      │ Map to       │   │
+│  │ 1000-2000μs  │      │ 30-150°      │   │
+│  └──────┬───────┘      └──────┬───────┘   │
+│         │                     │            │
+│         └──────────┬──────────┘            │
+│                    ▼                       │
+│           ┌────────────────┐               │
+│           │ Pack into      │               │
+│           │ ControlData    │               │
+│           │ struct         │               │
+│           └────────┬───────┘               │
+│                    ▼                       │
+│           ┌────────────────┐               │
+│           │ RF Transmit    │               │
+│           │ (433MHz)       │               │
+│           │ 2000bps        │               │
+│           └────────────────┘               │
+│                                             │
+└─────────────────────────────────────────────┘
+```
+
+**Pin Configuration:**
+
+| Component | Pin | Type | Range |
+|-----------|-----|------|-------|
+| Potentiometer | A1 | Analog Input | 0-1023 (raw) → 1000-2000µs (PWM) |
+| Joystick (X-axis) | A0 | Analog Input | 0-1023 (raw) → 30-150° (servo) |
+| RF TX | D12 | Digital Output | 433MHz @ 2000bps |
+| RF RX | D11 | Digital Input | (unused on transmitter) |
+
+**Dependencies:**
+```cpp
+RadioHead Library (RH_ASK) - Install via Arduino Library Manager
+```
+
+**Usage:**
+1. Connect potentiometer to A1 with 10kΩ pull-down
+2. Connect joystick X-axis to A0
+3. Connect 433MHz RF transmitter module to D12
+4. Power Arduino with USB or 9V battery
+5. Open Serial Monitor (9600 baud) to view transmitted values
 
 ---
 
-## 🌊 CFD Analysis
+## 7. CFD Analysis
 
 ### Simulation Setup
 
@@ -346,16 +463,19 @@ Amplitude = 2 × Wing Span × sin(φ)
 - **Flow Behavior**: Leading-edge vortex formation, periodic oscillations
 - **Conclusion**: High angle of attack leads to separation; flexible wings needed
 
-#### 📊 **[INSERT:]**
-1. Mesh layout visualization (Figure 14)
-2. Pressure field contours
-3. Velocity field streamlines (Figure 15)
-4. Lift vs. time plot
-5. Vorticity visualization
+<p align="center">
+  <img width="1701" height="607" alt="Mesh Layout and Aerodynamic Force Distribution of Flapping-Wing Simulation" src="https://github.com/user-attachments/assets/7905de34-1746-476c-a512-be234e4a6688" />
+  <br>
+  <em> Mesh Layout and Aerodynamic Force Distribution of Flapping-Wing Simulation </em>
+
+<p align="center">
+  <img width="1547" height="330" alt="Pressure Field, Velocity Field, and Aerodynamics" src="https://github.com/user-attachments/assets/d9b00036-1429-4547-b5c0-26b34ab4a695" />
+  <br>
+  <em> Pressure Field, Velocity Field and Aerodynamics </em>
 
 ---
 
-## 🧪 Testing & Results
+## 8. Testing & Results
 
 ### Lift Generation Tests
 
@@ -369,11 +489,30 @@ Amplitude = 2 × Wing Span × sin(φ)
 - **Relationship**: Quadratic correlation between lift and RPM
 - **Challenges**: Vibration at high speeds, material fatigue
 
-#### 📈 **[INSERT:]**
-1. Test rig photos (Figures 16, 17, 18)
-2. Lift vs. RPM curve (Figure 19 - Left)
-3. Test comparison chart (Figure 19 - Right)
-4. Video of lift test
+<p align="center">
+  <img width="269" height="149" alt="Initial testing rig" src="https://github.com/user-attachments/assets/00dc9c70-5d54-4379-a8ae-08381f36674b" />
+  <br>
+  <em> Pressure Field, Velocity Field and Aerodynamics </em>
+
+<p align="center">
+  <img width="305" height="112" alt="Frame to stabilise robot during testing" src="https://github.com/user-attachments/assets/fffa1931-d5e7-4d57-b705-891a252dad8f" />
+  <br>
+  <em> Frame to stabilise robot during testing </em
+
+<p align="center">
+  <img width="1299" height="583" alt="Conceptualized Approach" src="https://github.com/user-attachments/assets/10332b74-eb14-4e65-9ee2-528e623e46d7" />
+  <br>
+  <em> (a) Conceptualized 2nd Test Approach, (b) In practice Test Rig/Approach, (c) Spring Scale Representation </em
+
+<p align="center">
+  <img width="343" height="209" alt="(Left) Lift vs  RPM Curve" src="https://github.com/user-attachments/assets/18791ab8-37ac-4c6e-b86f-a41641bb3a61" />
+  <br>
+  <em> Lift vs. RPM Curve </em
+
+<p align="center">
+  <img width="345" height="212" alt="(Right) Comparative results of Test 1 and Test 2" src="https://github.com/user-attachments/assets/ccea99aa-524d-4bb7-935c-9adb90479094" />
+  <br>
+  <em> Comparative results of Test 1 and Test 2 </em
 
 ---
 
@@ -390,11 +529,6 @@ Amplitude = 2 × Wing Span × sin(φ)
 - **Front-Heavy Issue**: Requires precise pitch control
 - **Optimal Configuration**: 35° launch + 17° tail angle
 
-#### 🎥 **[INSERT:]**
-1. Gliding sequence frames (Figure 20)
-2. Slow-motion video
-3. Trajectory analysis diagram
-
 ---
 
 ### Performance Metrics
@@ -409,27 +543,14 @@ Amplitude = 2 × Wing Span × sin(φ)
 | Flight Duration | 30s | - | ❌ |
 
 **Conclusion:**
-- ✅ Lift generation successful
-- ✅ Aerodynamics validated
-- ⚠️ Weight optimization needed
-- 🔄 Sustained flight requires material upgrades
+- Lift generation successful
+- Aerodynamics validated
+- Weight optimization needed
+- Sustained flight requires material upgrades
 
 ---
 
-## 🎬 Demo Videos
-
-### Flight Tests
-**[INSERT: Embedded YouTube videos or GIFs]**
-
-1. **Flapping Mechanism in Action** (10s loop)
-2. **Lift Generation Test** (30s)
-3. **Gliding Demonstration** (20s)
-4. **Control System Response** (15s)
-5. **Assembly Timelapse** (2min)
-
----
-
-## 🚀 Installation & Setup
+## 9. Installation & Setup
 
 ### Prerequisites
 - Arduino IDE 1.8.19+
@@ -456,25 +577,7 @@ Amplitude = 2 × Wing Span × sin(φ)
 3. **Electronics Integration**
    - Follow circuit diagrams in `hardware/schematics/`
    - Solder connections on perfboard
-   - Mount components in body frame
-
-### Software Upload
-```bash
-# Clone repository
-git clone https://github.com/yourusername/ROBIN-Ornithopter.git
-cd ROBIN-Ornithopter
-
-# Install Arduino libraries
-cp -r src/libraries/* ~/Documents/Arduino/libraries/
-
-# Upload transmitter code
-arduino-cli compile --fqbn arduino:avr:nano src/transmitter/rf_controller.ino
-arduino-cli upload -p /dev/ttyUSB0 --fqbn arduino:avr:nano src/transmitter/
-
-# Upload receiver code
-arduino-cli compile --fqbn arduino:avr:nano src/receiver/bird_controller.ino
-arduino-cli upload -p /dev/ttyUSB1 --fqbn arduino:avr:nano src/receiver/
-```
+   - Mount components in body frame```
 
 ### Calibration
 
@@ -504,7 +607,7 @@ arduino-cli upload -p /dev/ttyUSB1 --fqbn arduino:avr:nano src/receiver/
 
 ---
 
-## 🔮 Future Work
+## 10. Future Work
 
 ### Next-Generation Design
 
@@ -534,28 +637,15 @@ arduino-cli upload -p /dev/ttyUSB1 --fqbn arduino:avr:nano src/receiver/
    - PID controller implementation
    - Setpoint regulation for hovering
    - Trajectory tracking for autonomous flight
-
-#### 🖼️ **[INSERT:]**
-1. Future design CAD (Figures 22, 26-28)
-2. Elliptical gear mechanism
-3. Foldable wing animation
-4. PID control block diagram (Figure 22)
-
----
-
-## 📅 Project Timeline
-
-| Phase | Duration | Milestones |
-|-------|----------|------------|
-| **Phase 1** | Week 8-14 | Concept design, material research |
-| **Phase 2** | Week 16-23 | Prototype development, CFD analysis |
-| **Phase 3** | Week 25-31 | Motor replacement, final testing |
-
-**[INSERT: Gantt chart or timeline visualization]**
+  
+<p align="center">
+  <img width="808" height="416" alt="Feedback control Using PID" src="https://github.com/user-attachments/assets/000ab7e5-8c98-4427-8e43-9a0f76e83eaf" />
+  <br>
+  <em> Feedback control Using PID </em
 
 ---
 
-## 💰 Bill of Materials
+## 11. Bill of Materials
 
 ### Main Prototype (£206 total)
 
@@ -596,11 +686,9 @@ arduino-cli upload -p /dev/ttyUSB1 --fqbn arduino:avr:nano src/receiver/
 
 *Components marked with * were sourced from personal inventory or previous projects
 
-**Full BOM:** See `hardware/bom.csv`
-
 ---
 
-## 🌱 Sustainability & Impact
+## 12. Sustainability & Impact
 
 ### Life Cycle Assessment
 
@@ -622,28 +710,25 @@ arduino-cli upload -p /dev/ttyUSB1 --fqbn arduino:avr:nano src/receiver/
 
 **UN Sustainable Development Goal 15: Life on Land**
 
-Our robot supports:
-- 🌳 Wildlife habitat monitoring
-- 🦏 Anti-poaching surveillance
-- 📊 Biodiversity data collection
-- 🌍 Ecosystem health assessment
+This robot supports:
+- Wildlife habitat monitoring
+- Anti-poaching surveillance
+- Biodiversity data collection
+- Ecosystem health assessment
 
 ---
 
-## 👥 Team
+## 13. Team
 
 **Department of Engineering, King's College London**
 
-| Name | Email | Role |
-|------|-------|------|
-| Imranur Ahmed | k21008673@kcl.ac.uk | Mechanical Design Lead |
-| Abdullah Bhuiyan Begum | k21053755@kcl.ac.uk | Electronics & Control |
-| Jed Gawan | k24106607@kcl.ac.uk | Wing Design & Testing |
-| Giacomo Demetrio Masone | k24112459@kcl.ac.uk | CFD Analysis |
-| Dev Ajay Ateya | k24089781@kcl.ac.uk | System Integration |
-| Mohamed Mohamed | k24113059@kcl.ac.uk | Control Software |
-| Tan Guo | k24009489@kcl.ac.uk | Fabrication & Assembly |
-| Nii Tettey | k19029907@kcl.ac.uk | Testing & Validation |
+- Imranur Ahmed
+- Abdullah Bhuiyan Begum
+- Jed Gawan
+- Dev Ajay Ateya
+- Mohamed Mohamed | k24113059@kcl.ac.uk | Control Software |
+- Tan Guo
+- Nii Tettey 
 
 **Supervisors:**
 - Dr. Juan Li
@@ -651,7 +736,7 @@ Our robot supports:
 
 ---
 
-## 🙏 Acknowledgments
+## 14. Acknowledgments
 
 - **Festo Bionic Learning Network** - Inspiration from BionicSwift and BionicFlyingFox
 - **KCL Maker Space** - Fabrication facilities and equipment
@@ -659,7 +744,7 @@ Our robot supports:
 
 ---
 
-## 📄 License
+## 15. License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -673,40 +758,16 @@ If you use this work in your research, please cite:
   title = {R.O.B.I.N.: Robot Ornithopter Bio-Inspired by Nature},
   year = {2025},
   publisher = {King's College London},
-  howpublished = {\url{https://github.com/yourusername/ROBIN-Ornithopter}},
+  howpublished = {\url{https://github.com/Degas01/bio-inspired_ornithopter}},
 }
 ```
 
 ---
 
-## 📚 References
+## 16. References
 
 1. Millner et al. (2023) - "Opportunities and Risks of Aerial Monitoring for Biodiversity Conservation"
 2. WWF (2024) - Living Planet Report
 3. Macke et al. (2024) - "Drone Noise Impact on Wildlife"
 4. Tobalske & Dial (2007) - "Aerodynamics of Wing-Assisted Incline Running"
 5. Festo BionicSwift (2018)
-
-**Full reference list:** See `docs/references.bib`
-
----
-
-## 📞 Contact
-
-For questions, collaborations, or inquiries:
-
-- **Project Website:** [your-website.com]
-- **Email:** [project-email@domain.com]
-- **Issues:** [GitHub Issues](https://github.com/yourusername/ROBIN-Ornithopter/issues)
-
----
-
-<div align="center">
-
-### ⭐ Star this repository if you found it helpful!
-
-**[Documentation](docs/) • [CAD Files](cad/) • [Code](src/) • [Report](docs/full_report.pdf)**
-
-Made with ❤️ by the R.O.B.I.N. Team
-
-</div>
