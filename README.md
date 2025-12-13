@@ -1,5 +1,16 @@
-# R.O.B.I.N. 
-## Robot Ornithopter Bio-Inspired by Nature
+# R.O.B.I.N.: Robot Ornithopter Bio-Inspired by Nature
+
+<p align="center">
+  <img width="1618" height="764" alt="IMG_5426" src="https://github.com/user-attachments/assets/57f13fcb-ea8a-4881-8edf-b7403eebe0bb" />
+</p>
+
+
+
+
+
+
+
+
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
@@ -7,6 +18,8 @@
 [![CFD](https://img.shields.io/badge/ANSYS-FFB71B?logo=ansys&logoColor=black)](https://www.ansys.com/)
 [![Build Status](https://img.shields.io/badge/build-prototype-yellow)](.)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![King's College London](https://img.shields.io/badge/Institution-King's_College_London-blue.svg)](https://www.kcl.ac.uk/)
+
 
 *A bio-inspired flying robot designed for seamless wildlife monitoring and conservation*
 
