@@ -503,16 +503,19 @@ RadioHead Library (RH_ASK) - Install via Arduino Library Manager
   <img width="1299" height="583" alt="Conceptualized Approach" src="https://github.com/user-attachments/assets/10332b74-eb14-4e65-9ee2-528e623e46d7" />
   <br>
   <em> (a) Conceptualized 2nd Test Approach, (b) In practice Test Rig/Approach, (c) Spring Scale Representation </em
+  
 
 <p align="center">
   <img width="343" height="209" alt="(Left) Lift vs  RPM Curve" src="https://github.com/user-attachments/assets/18791ab8-37ac-4c6e-b86f-a41641bb3a61" />
   <br>
   <em> Lift vs. RPM Curve </em
+  
 
 <p align="center">
   <img width="345" height="212" alt="(Right) Comparative results of Test 1 and Test 2" src="https://github.com/user-attachments/assets/ccea99aa-524d-4bb7-935c-9adb90479094" />
   <br>
   <em> Comparative results of Test 1 and Test 2 </em
+  
 
 ---
 
