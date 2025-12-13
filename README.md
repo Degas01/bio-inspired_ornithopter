@@ -4,9 +4,9 @@
   <img width="2048" height="758" alt="IMG-20250319-WA0011" src="https://github.com/user-attachments/assets/657438b4-bb4d-4284-b9f2-4693eaa32f16" />
 </p>
 
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)]()
 [![CFD](https://img.shields.io/badge/ANSYS-FFB71B?logo=ansys&logoColor=black)](https://www.ansys.com/)
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
-[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)]()
 [![CAD](https://img.shields.io/badge/Fusion_360-0696D7?logo=autodesk&logoColor=white)](https://www.autodesk.com/products/fusion-360)
 [![Build Status](https://img.shields.io/badge/build-prototype-yellow)](.)
 [![Hardware](https://img.shields.io/badge/Hardware-Arduino%20%7C%20BLDC-orange)]()
