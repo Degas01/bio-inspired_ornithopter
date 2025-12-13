@@ -1,8 +1,5 @@
-# R.O.B.I.N.
-
-
-
-### Robot Ornithopter Bio-Inspired by Nature
+# R.O.B.I.N. 
+## Robot Ornithopter Bio-Inspired by Nature
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
