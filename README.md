@@ -45,7 +45,7 @@ R.O.B.I.N. is a bio-inspired flapping-wing aerial robot developed to investigate
 
 ## Table of Contents
 
-- [1. Project Motivation] (#project-motivation)
+- [1. Project Motivation](#project-motivation)
 - [2. Key Features](#features)
 - [3. System Architecture](#system-architecture)
 - [4. Mechanical Design](#mechanical-design)
