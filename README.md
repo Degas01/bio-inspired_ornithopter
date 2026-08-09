@@ -727,7 +727,7 @@ This robot supports:
 - Abdullah Bhuiyan Begum
 - Jed Gawan
 - Dev Ajay Ateya
-- Mohamed Mohamed | k24113059@kcl.ac.uk | Control Software |
+- Mohamed Mohamed 
 - Tan Guo
 - Nii Tettey 
 
